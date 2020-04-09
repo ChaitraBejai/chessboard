@@ -1,0 +1,13 @@
+.white-box, .black-box{
+    width: 70px;
+    height:70px;
+}
+.black-box{
+    background-color: black;
+}
+.red-box{
+    background-color: brown;
+}
+#outer-box{
+    margin:10px auto;
+}
