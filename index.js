@@ -26,11 +26,12 @@ handleClick = (i, j) => {
     //Erase the previous click
     for(let m = 0; m < 8; m++ ){
         for(let n = 0; n < 8; n++ ){
+            let tableCell = document.getElementsByTagName("tr")[m].getElementsByTagName("td")[n]
             if( (m % 2) != (n % 2) ){
-                document.getElementsByTagName("tr")[m].getElementsByTagName("td")[n].className = "black-box"
+                tableCell.className = "black-box"
             }
             else{
-                document.getElementsByTagName("tr")[m].getElementsByTagName("td")[n].className = "white-box"
+                tableCell.className = "white-box"
             }
         }
     }
